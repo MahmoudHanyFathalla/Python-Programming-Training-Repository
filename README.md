@@ -1,6 +1,6 @@
 # Python Programming Training Repository
 
-This repository contains a collection of Python scripts designed for training and advancing Python programming skills. Each script offers a hands-on exercise for learning key programming concepts, ranging from basic logic to more advanced topics, such as game development, speech recognition, and string analysis. The training covers a broad spectrum of Python use cases, providing ample opportunities to practice and improve your coding abilities.
+This repository contains a collection of Python scripts designed for training and advancing Python programming skills. Each script offers a hands-on exercise for learning key programming concepts, ranging from basic logic to more advanced topics, such as game development, sentiment analysis, password hashing, and more. The training covers a broad spectrum of Python use cases, providing ample opportunities to practice and improve your coding abilities.
 
 ---
 
@@ -17,6 +17,9 @@ This repository contains a collection of Python scripts designed for training an
 9. [Speech Recognition](#speech-recognition)
 10. [String Analysis](#string-analysis)
 11. [Tic-Tac-Toe vs Computer](#tic-tac-toe-vs-computer)
+12. [Bags of Words Model](#bags-of-words-model)
+13. [Sentiment Intensity Analyzer](#sentiment-intensity-analyzer)
+14. [Password Hashing with Tkinter](#password-hashing-with-tkinter)
 
 ---
 
@@ -88,18 +91,39 @@ This script allows the user to play Tic-Tac-Toe against the computer. It combine
 
 ---
 
+### 12. **Bags of Words Model (bags.py)**
+
+This script demonstrates the **Bag of Words** model, which is a popular text representation technique used in natural language processing (NLP). It helps convert text into a format that a machine learning model can work with. This script involves text preprocessing, tokenization, and vectorization.
+
+---
+
+### 13. **Sentiment Intensity Analyzer (SentimentIntensityAnalyzer.py)**
+
+This script uses the **VADER Sentiment Analysis** library to analyze the sentiment of a given text. It detects whether the sentiment is positive, neutral, or negative and provides a sentiment score. This is a great script for learning about sentiment analysis and integrating NLP libraries.
+
+---
+
+### 14. **Password Hashing with Tkinter (TK_hash_pass.py)**
+
+This script provides a graphical user interface (GUI) for securely hashing a password. It uses Python's `hashlib` library for hashing and the `Tkinter` library for creating the GUI. It allows users to input their password, hash it, and view the resulting hash. This script is perfect for learning about password security and GUI development.
+
+---
+
 ## Requirements
 
 - Python 3.6 or higher
 - `pygame` (for Snake game)
 - `speech_recognition` (for Speech Recognition script)
-- Other Python standard libraries (like `random`, `tkinter`, etc.)
+- `nltk` (for Sentiment Analysis and Bag of Words)
+- `tkinter` (for GUI-based scripts)
+- Other Python standard libraries (like `random`, `hashlib`, `pyautogui`, etc.)
 
 To install external libraries, use the following commands:
 
 ```bash
 pip install pygame
 pip install SpeechRecognition
+pip install nltk
 ```
 
 ---
@@ -152,4 +176,4 @@ This project is open-source and available under the **MIT License**. You are fre
 
 - Special thanks to the contributors of Python's extensive documentation and tutorials, which inspired the creation of these scripts.
 - Pygame for game development.
-- SpeechRecognition for providing tools for audio processing.
+- SpeechRecognition and NLTK for providing tools for audio and text processing.
